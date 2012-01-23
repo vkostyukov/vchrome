@@ -1,0 +1,11 @@
+{
+	"content_scripts": [ {
+		"js": ["js/jquery-1.7.1.min.js", "js/vchrome.js"],
+		"matches": [ "http://vkontakte.ru/*", "http://vk.com/*" ],
+		"run_at": "document_start"
+	}],
+	"description": "VKontakte music/video downloader",
+	"name": "VChrome",
+	"permissions": [ "tabs", "http://vkontakte.ru/*", "http://vk.com/*" ],
+	"version": "0.2.0"
+}
