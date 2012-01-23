@@ -4,8 +4,8 @@
 		"matches": [ "http://vkontakte.ru/*", "http://vk.com/*" ],
 		"run_at": "document_start"
 	}],
-	"description": "VKontakte music/video downloader",
+	"description": "VKontakte Chrome Extension",
 	"name": "VChrome",
 	"permissions": [ "tabs", "http://vkontakte.ru/*", "http://vk.com/*" ],
-	"version": "0.2.0"
+	"version": "0.3.0"
 }
