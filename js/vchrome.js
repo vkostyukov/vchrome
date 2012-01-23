@@ -17,12 +17,9 @@
 			frozen = true;
 			$(this).attr("vch-processed", "true");
 
-			var title = undefined;
-			var path = undefined;
-
-			title = $("td.info .title_wrap", this).text()
+			var title = $("td.info .title_wrap", this).text()
 				|| $("td.info .audio_title_wrap", this).text();
-			path = $("table tbody tr td.play_btn input", this).attr("value")
+			var path = $("table tbody tr td.play_btn input", this).attr("value")
 				|| $("table tbody tr td input", this).attr("value");
 
 			path = path.split(",")[0];
@@ -37,9 +34,6 @@
 			$("table tbody tr td.info", this).after("<td>" + button + "</td>");
 
 			frozen = false;
-		},
-		video: function() {
-			// not implemented yet
 		}
 	};
 
