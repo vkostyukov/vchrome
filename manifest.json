@@ -4,6 +4,11 @@
 		"matches": [ "http://vkontakte.ru/*", "http://vk.com/*" ],
 		"run_at": "document_start"
 	}],
+	"icons": {
+		"16": "img/vchrome_16.png",
+		"48": "img/vchrome_48.png",
+		"128": "img/vchrome_128.png"
+	},
 	"description": "VKontakte Chrome Extension",
 	"name": "VChrome",
 	"permissions": [ "tabs", "http://vkontakte.ru/*", "http://vk.com/*" ],
