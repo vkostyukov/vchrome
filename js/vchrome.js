@@ -1,10 +1,12 @@
 /*!
- * VChrome is Chrome Extension for VKontakte.
+ * VChrome is Chrome Extension for VKontakte (http://vk.com).
  *
- * Version: 0.2.0 (Jan 2012)
+ * Version: 0.3.0 (Jun 2012)
  *
  * Copyright 2011, Vladimir Kostyukov (http://vkostyukov.ru)
  * License: http://www.apache.org/licenses/LICENSE-2.0.html
+ * Project page: https://github.com/vkostyukov/vchrome
+ *
  */
 
 (function($) {
@@ -51,7 +53,7 @@
 			$("td.info", this).css("width", infoHandler);
 
 			$("td.play_btn", this).bind("click", function() {
-				var whiteImage = chrome.extension.getURL("img/disk-white10.png");
+				var whiteImage = chrome.extension.getURL("img/disk-white.png");
 				var whiteStyle = "width:12px;height:12px;float:left;margin-top:12px;padding-right:4px;margin-left:4px;background:url('" + whiteImage + "') no-repeat;";
 				var whiteButton = "<a onmouseover=\"showTooltip(this, {content: '&lt;div class=gp_tip_text&gt;Download as "+ title + " .mp3&lt;/div&gt;',className:'gp_tip',shift:[4,12]});\" href=\"" + path + "\" download=\"" + title + ".mp3\" style=\"" + whiteStyle + "\"></a>";
 
