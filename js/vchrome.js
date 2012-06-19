@@ -3,7 +3,7 @@
  *
  * Version: 0.3.0 (Jun 2012)
  *
- * Copyright 2011, Vladimir Kostyukov (http://vkostyukov.ru)
+ * Copyright 2012, Vladimir Kostyukov (http://vkostyukov.ru)
  * License: http://www.apache.org/licenses/LICENSE-2.0.html
  * Project page: https://github.com/vkostyukov/vchrome
  *
