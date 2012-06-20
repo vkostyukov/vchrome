@@ -1,7 +1,7 @@
 /*!
  * VChrome is Chrome Extension for VKontakte (http://vk.com).
  *
- * Version: 0.5.0 (Jun 2012)
+ * Version: 0.5 (Jun 2012)
  *
  * Copyright 2012, Vladimir Kostyukov (http://vkostyukov.ru)
  * License: http://www.apache.org/licenses/LICENSE-2.0.html
