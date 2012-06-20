@@ -1,7 +1,7 @@
 /*!
  * VChrome is Chrome Extension for VKontakte (http://vk.com).
  *
- * Version: 0.4.0 (Jun 2012)
+ * Version: 0.5.0 (Jun 2012)
  *
  * Copyright 2012, Vladimir Kostyukov (http://vkostyukov.ru)
  * License: http://www.apache.org/licenses/LICENSE-2.0.html
@@ -32,6 +32,10 @@
 				return;
 			}
 
+			var cutter = function(index, value) {
+				return parseInt(value.substring(0, value.length - 2)) - 22 + "px";
+			};
+
 			if ($(this).attr("vch-checksum") == undefined) {
 				var title = $("td.info .title_wrap", this).text()
 					|| $("td.info .audio_title_wrap", this).text();
@@ -48,19 +52,14 @@
 				var blueButton = "<a title=\"Download as " + title + ".mp3\" href=\"" + path + "\" download=\"" + title + ".mp3\" style=\"" + blueStyle + "\"></a>";
 
 				$("td.info", this).before("<td>" + blueButton + "</td>");
+
+				if (window.location.href.match("audio?")) {
+					$("td.info", this).css("width", cutter);
+				}
 			}
 
-			var titleHandler = function(index, value) {
-				return value.substring(0, value.length - 2) - 16 + "px";
-			};
-
-			var infoHandler = function(index, value) {
-				if (value != infoWidth) return value;
-				return value.substring(0, value.length - 2) - 24 + "px";
-			};
-
-			$("td.info .audio_title_wrap", this).css("width", titleHandler);
-			$("td.info .title_wrap", this).css("width", titleHandler);
+			$("td.info .audio_title_wrap", this).css("width", cutter);
+			$("td.info .title_wrap", this).css("width", cutter);
 
 			$(this).attr("vch-checksum", chk);
 
