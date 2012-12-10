@@ -9,8 +9,15 @@
 		"48": "img/vchrome_48.png",
 		"128": "img/vchrome_128.png"
 	},
+	"web_accessible_resources": [
+		"img/disk-blue.png",
+		"img/disk-white.png",
+		"js/jquery-1.7.1.min.js",
+		"js/vchrome.js"
+	],
 	"description": "VKontakte Chrome Extension",
 	"name": "VChrome",
 	"permissions": [ "tabs", "http://vkontakte.ru/*", "http://vk.com/*" ],
-	"version": "0.5"
+	"version": "0.6",
+	"manifest_version": 2
 }
