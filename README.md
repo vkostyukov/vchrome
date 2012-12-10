@@ -1,7 +1,7 @@
 VChrome (VKontakte Chrome Extension)
 =============================
 
-This is [Chrome](http://chrome.google.com) Extension for [VKontakte](http://vk.com/) which allows to download music (by clicking blue disk icon) with human-readable names.
+This is [Chrome](http://chrome.google.com) Extension for [VKontakte](http://vk.com/) which allows to download music (by clicking blue disk icon) with human-readable file names.
 
 ![VChrome Screenshoot](https://raw.github.com/vkostyukov/vchrome/master/scrot.png)
 
