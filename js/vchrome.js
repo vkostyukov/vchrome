@@ -1,7 +1,7 @@
 /*!
  * VChrome is Chrome Extension for VKontakte (http://vk.com).
  *
- * Version: 0.6 (Dec 2012)
+ * Version: 0.6.1 (Dec 2012)
  *
  * Copyright 2012, Vladimir Kostyukov (http://vkostyukov.ru)
  * License: http://www.apache.org/licenses/LICENSE-2.0.html
@@ -54,14 +54,17 @@
 
         var blueImage = chrome.extension.getURL("img/disk-blue.png");
         var blueStyle = "";
+
         if (isAudioPage) {
           blueStyle = "width:16px;height:16px;float:left;padding-right:4px;margin-top:4px;margin-left:-4px;background:url('" + blueImage + "') no-repeat;";
         } else {
           blueStyle = "width:16px;height:16px;float:left;padding-right:4px;margin-top:6px;background:url('" + blueImage + "') no-repeat;";
         }
-        var blueButton = "<a title=\"Download as " + title + ".mp3\" href=\"" + path + "\" download=\"" + title + ".mp3\" style=\"" + blueStyle + "\"></a>";
 
-        $(".area .info", this).before("<td class=\"fl_l\">" + blueButton + "</td>");
+        var blueButton = "<a title=\"Download as " + title + ".mp3\" href=\"" + path + "\" download=\"" 
+          + title + ".mp3\" style=\"" + blueStyle + "\"></a>";
+
+        $(".area .info", this).before("<td class=\"fl_l\" style=\"z-index:-1000;\">" + blueButton + "</td>");
 
         if (isAudioPage) {
           $(".area .info", this).css("width", cutter);
