@@ -1,6 +1,6 @@
 {
 	"content_scripts": [ {
-		"js": ["js/jquery-1.7.1.min.js", "js/vchrome.js"],
+		"js": ["js/jquery-1.8.3.min.js", "js/vchrome.js"],
 		"matches": [ "http://vkontakte.ru/*", "http://vk.com/*" ],
 		"run_at": "document_start"
 	}],
@@ -12,7 +12,7 @@
 	"web_accessible_resources": [
 		"img/disk-blue.png",
 		"img/disk-white.png",
-		"js/jquery-1.7.1.min.js",
+		"js/jquery-1.8.3.min.js",
 		"js/vchrome.js"
 	],
 	"description": "VKontakte Chrome Extension",
