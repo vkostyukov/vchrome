@@ -18,6 +18,6 @@
 	"description": "VKontakte Chrome Extension",
 	"name": "VChrome",
 	"permissions": [ "tabs", "http://vkontakte.ru/*", "http://vk.com/*" ],
-	"version": "0.6",
+	"version": "0.6.1",
 	"manifest_version": 2
 }
